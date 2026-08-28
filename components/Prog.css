@@ -1,0 +1,50 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: full;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 10px;
+    font-weight: 600;
+    bottom: 50%; 
+    left: 50%; 
+    margin-left: -60px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.p-carousel-prev {
+background-color: #f5d64e;
+}
+.p-carousel-next {
+  background-color: #f5d64e;
+  }
+
+
+  .error-message {
+    color: #f5d64e;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .p-dialog-content {
+    background-color: #2d2a1c;
+  }
+  .p-dialog-draggable .p-dialog-header{
+    background-color: #2d2a1c;
+    display: none;
+  }

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "MontechMedium";
+  src: local("MontechMedium"),
+    url(../src/config/fonts/Montech/MONTECHV01-Medium.otf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(../src/config/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Subjectivity";
+  src: local("Subjectivity"),
+    url(../src/config/fonts/SubjectivityFont/Subjectivity-Medium.otf);
+}
+
+@font-face {
+  font-family: "SubjectivityBold";
+  src: local("SubjectivityBold"),
+    url(../src/config/fonts/SubjectivityFont/Subjectivity-Bold.otf);
+}
+.p-datatable {
+  margin-bottom: 10px;
+}
+.p-datatable-thead {
+  background-color: #1dbdaf;
+  height: 50px;
+}
+.p-datatable-tbody {
+  margin-bottom: 100px;
+
+  align-items: center;
+}
+.p-paginator {
+  margin-top: 10px; /* Add space above */
+  padding: 10px 0; /* Add padding */
+}
+/* Add spacing between the paginator elements */
+.p-paginator .p-paginator-pages .p-paginator-page {
+  margin: 0 5px; /* Adds horizontal spacing between numbers */
+}
+.p-datatable-scrollable {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .p-datatable-scrollable {
+    width: 30%;
+  }
+}
+
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-prev {
+  margin: 0 10px; /* Adds spacing between arrows and numbers */
+}
+.p-column-title {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.dialog-content {
+  width: 500px;
+  height: 330px;
+  background-color: black;
+  padding: 20px;
+  /* max-width: 80%; */
+  text-align: center;
+  color: #1dbdaf;
+}
+
+.dialog-content img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Show the tooltip when hovering over the parent container */
+div:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
