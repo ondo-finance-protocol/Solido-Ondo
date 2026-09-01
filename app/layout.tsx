@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NavBar from "@/components/navbar";
 import { TabsDemo } from "@/components/sidebar";
 import { WalletProvider } from "@/context/WalletContext";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,18 +38,20 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <WalletProvider>
-          <div className="grid h-screen mainT w-full grid-cols-[max-content_1fr] overflow text-white">
-            <TabsDemo />
-            <div className="body text-black overflow-y-scroll bg-black">
-              <NavBar />
-              <div className="h-screen md:w-full w-screen px-8 py-6 bg-black">
-                {children}
+        <Providers>
+          <WalletProvider>
+            <div className="grid h-screen mainT w-full grid-cols-[max-content_1fr] overflow text-white">
+              <TabsDemo />
+              <div className="body text-black overflow-y-scroll bg-black">
+                <NavBar />
+                <div className="h-screen md:w-full w-screen px-8 py-6 bg-black">
+                  {children}
+                </div>
               </div>
             </div>
-          </div>
-          <Toaster />
-        </WalletProvider>
+            <Toaster />
+          </WalletProvider>
+        </Providers>
       </body>
     </html>
   );
